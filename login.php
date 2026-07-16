@@ -114,8 +114,10 @@ session_start(); // creating new session
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #ffffff;
-            /* Change this to your desired background color */
+            background-color: rgba(4, 0, 68, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -124,7 +126,7 @@ session_start(); // creating new session
 
         /* Loading Animation time */
         #loading-screen {
-            transition: opacity 0.25s ease;
+            transition: opacity 0.15s ease;
             /* Add a transition for opacity */
             opacity: 1;
             /* Start with full opacity */
@@ -136,7 +138,7 @@ session_start(); // creating new session
 <body>
         <!--\| Loading Screen -->
 <div id="loading-screen">
-        <div class="spinner-border" role="status">
+        <div class="spinner-border text-light" role="status">
         </div>
         <p style="margin-left:10px;font-weight: bold;font-size: 1.8em;">Loading...</p>
     </div>
