@@ -23,7 +23,7 @@ session_start();
 <body>
     <!--\| Loading Screen -->
 <div id="loading-screen">
-        <div class="spinner-border" role="status">
+        <div class="spinner-border text-light" role="status">
         </div>
         <p style="margin-left:10px;font-weight: bold;font-size: 1.8em;">Loading...</p>
     </div>
@@ -63,8 +63,8 @@ session_start();
                     <a class="btn btn-outline-light me-2 login-btn" href="login.php">
                         <i class="fas fa-home"></i> Login
                     </a>
+                    <a class="btn btn-outline-light register-btn" href="register.php">Register</a>
                 <?php } ?>
-                <a class="btn btn-outline-light register-btn" href="register.php">Register</a>
             </div>
 
     </nav>
