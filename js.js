@@ -28,11 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // Loading Smooth Unloading
 window.addEventListener('load', function () {
   var loadingScreen = document.getElementById('loading-screen');
-
-  setTimeout(function () {
+  if (loadingScreen) {
     loadingScreen.style.opacity = '0'; /* Set opacity to 0 for fade-out effect */
     setTimeout(function () {
       loadingScreen.style.display = 'none'; /* Hide the loading screen */
-    }, 250); /* Delay for 250ms before hiding */
-  }, 250); /* Delay for 250ms before starting fade-out */
+    }, 150); /* Delay for 150ms before hiding */
+  }
 });
